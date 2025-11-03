@@ -3,10 +3,11 @@ using UnityEngine. InputSystem;
 
 public class Player_Controller : MonoBehaviour
 {
+    private Rigidbody rb;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -14,5 +15,13 @@ public class Player_Controller : MonoBehaviour
     {
         
     }
-    Voin OnMove(InputValue movementValue)
+    void OnMove(InputValue movementValue)
+    {
+    Vector2 movementVector = movementValue.Get<Vector2>();
+}
+{
+private void FixedUpdate(){
+rb.AddForce (movementVector);
+}
+}
 }
