@@ -67,5 +67,5 @@
         "*.sln": "*.csproj",
         "*.slnx": "*.csproj"
     },
-    "dotnet.defaultSolution": "Roll-A-Ball-Genevieve.slnx"
+    "dotnet.defaultSolution": "GitHub.slnx"
 }
